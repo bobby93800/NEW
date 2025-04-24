@@ -208,8 +208,8 @@ def handle_bgmi(message):
         try:
             port = int(command[2])
             duration = int(command[3])
-            if duration > 300:
-                response = "⚠️ Error: Maximum attack duration is 300 seconds."
+            if duration > 240:
+                response = "⚠️ Error: Maximum attack duration is 240 seconds."
                 bot.reply_to(message, response)
                 return
 
